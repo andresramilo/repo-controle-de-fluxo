@@ -1,7 +1,7 @@
 name: Workflow evento Scheduled
 on:
   schedule:
-    - cron: "*/2 * * * *" # Executa diariamente à meia-noite
+    - cron: "*/5 * * * *" # Executa diariamente à meia-noite
 
 jobs:
   teste:
@@ -11,14 +11,3 @@ jobs:
       - name: Action de Teste
         run: |
           echo "Action executada apenas em main e feature/*"
-
-      - name: Alteração no card
-        uses: actions/github-script@v6
-        with:
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: "Adicionando comentário aqui sobre o pull request"
-            });
