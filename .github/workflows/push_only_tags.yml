@@ -1,4 +1,4 @@
-name: Workflow evento
+name: Workflow evento push somente com tags
 on:
   push:
     tags:
