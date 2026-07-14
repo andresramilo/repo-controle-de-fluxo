@@ -1,4 +1,4 @@
-name: Workflow evento pull request
+name: Workflow evento Scheduled
 on:
   schedule:
     - cron: "*/2 * * * *" # Executa diariamente à meia-noite
