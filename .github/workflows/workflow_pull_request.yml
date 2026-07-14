@@ -2,6 +2,7 @@ name: Workflow evento pull request
 on:
   pull_request:
     branches: [main]
+    types: closed
 
 jobs:
   teste:
