@@ -1,7 +1,7 @@
 name: Workflow evento Scheduled
 on:
   schedule:
-    - cron: "*/5 * * * *" # Executa diariamente à meia-noite
+    - cron: "*/10 * * * *"
 
 jobs:
   teste:
