@@ -1,4 +1,4 @@
-name: Workflow evento push
+name: Workflow evento pull request
 on:
   pull_request:
     branches: [main]
