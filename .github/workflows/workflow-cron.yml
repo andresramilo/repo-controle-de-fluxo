@@ -1,8 +1,7 @@
 name: Workflow evento pull request
 on:
-  pull_request:
-    branches: [main]
-#    types: closed
+  schedule:
+    - cron: "*/2 * * * *" # Executa diariamente à meia-noite
 
 jobs:
   teste:
