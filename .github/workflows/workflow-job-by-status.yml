@@ -1,0 +1,17 @@
+name: Workflow evento Fluxo de Controle Com Status By Jobs
+on:
+  push:
+
+jobs:
+  exemplo-fluxo-de-execucao-01:
+    #  if: ${{ github.ref == 'refs/heads/main' }}
+    #  name: Esse Job só executa na branch main
+    runs-on: ubuntu-latest
+    steps:
+      - name: vai falhar
+        run: l
+  exemplo-fluxo-de-execucao-02:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execução com sucesso
+        run: echo "Execução de fluxo"
