@@ -1,4 +1,4 @@
-name: Workflow evento Fluxo de Controle
+name: Workflow evento Fluxo de Controle Com status
 on:
   push:
 
