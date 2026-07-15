@@ -11,6 +11,7 @@ jobs:
       - name: vai falhar
         run: l
   exemplo-fluxo-de-execucao-02:
+    needs: [exemplo-fluxo-de-execucao-01]
     runs-on: ubuntu-latest
     steps:
       - name: Execução com sucesso
