@@ -2,6 +2,7 @@ name: Workflow evento Scheduled
 on:
   schedule:
     - cron: "*/10 * * * *"
+  workflow_dispatch:
 
 jobs:
   teste:
