@@ -4,8 +4,6 @@ on:
 
 jobs:
   exemplo-fluxo-de-execucao-01:
-    #  if: ${{ github.ref == 'refs/heads/main' }}
-    #  name: Esse Job só executa na branch main
     runs-on: ubuntu-latest
     steps:
       - name: vai falhar
@@ -13,6 +11,7 @@ jobs:
   exemplo-fluxo-de-execucao-02:
     needs: [exemplo-fluxo-de-execucao-01]
     runs-on: ubuntu-latest
+    if: ${{ failure() }}
     steps:
       - name: Execução com sucesso
         run: echo "Execução de fluxo"
